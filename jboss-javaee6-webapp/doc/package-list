@@ -1,0 +1,7 @@
+org.jboss.tools.examples.controller
+org.jboss.tools.examples.data
+org.jboss.tools.examples.model
+org.jboss.tools.examples.rest
+org.jboss.tools.examples.service
+org.jboss.tools.examples.test
+org.jboss.tools.examples.util

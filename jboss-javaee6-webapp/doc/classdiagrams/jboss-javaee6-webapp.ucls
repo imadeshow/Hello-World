@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="org.jboss.tools.examples.controller.MemberController" 
+    project="jboss-javaee6-webapp" 
+    file="/jboss-javaee6-webapp/src/main/java/org/jboss/tools/examples/controller/MemberController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="217" x="1106" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.jboss.tools.examples.data.MemberListProducer" project="jboss-javaee6-webapp" 
+    file="/jboss-javaee6-webapp/src/main/java/org/jboss/tools/examples/data/MemberListProducer.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="230" x="1363" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="org.jboss.tools.examples.data.MemberRepository" project="jboss-javaee6-webapp" 
+    file="/jboss-javaee6-webapp/src/main/java/org/jboss/tools/examples/data/MemberRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="214" x="1004" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="org.jboss.tools.examples.model.Member" project="jboss-javaee6-webapp" 
+    file="/jboss-javaee6-webapp/src/main/java/org/jboss/tools/examples/model/Member.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="297" width="167" x="1258" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="org.jboss.tools.examples.rest.JaxRsActivator" project="jboss-javaee6-webapp" 
+    file="/jboss-javaee6-webapp/src/main/java/org/jboss/tools/examples/rest/JaxRsActivator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="133" x="295" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="org.jboss.tools.examples.rest.MemberResourceRestService" 
+    project="jboss-javaee6-webapp" 
+    file="/jboss-javaee6-webapp/src/main/java/org/jboss/tools/examples/rest/MemberResourceRestService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="376" x="690" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="org.jboss.tools.examples.service.MemberRegistration" 
+    project="jboss-javaee6-webapp" 
+    file="/jboss-javaee6-webapp/src/main/java/org/jboss/tools/examples/service/MemberRegistration.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="191" x="690" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="org.jboss.tools.examples.util.Resources" project="jboss-javaee6-webapp" 
+    file="/jboss-javaee6-webapp/src/main/java/org/jboss/tools/examples/util/Resources.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="211" x="44" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="org.jboss.tools.examples.test.MemberRegistrationTest" 
+    project="jboss-javaee6-webapp" 
+    file="/jboss-javaee6-webapp/src/test/java/org/jboss/tools/examples/test/MemberRegistrationTest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="182" x="468" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="10">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="11" name="newMember"/>      
+      <multiplicity id="12" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="13">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="14" name="repository"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="16">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="17" name="memberRegistration"/>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="19">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="20" name="members"/>      
+      <multiplicity id="21" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="22">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="23" name="registration"/>      
+      <multiplicity id="24" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="25">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="26" name="memberRegistration"/>      
+      <multiplicity id="27" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="29" name="memberRepository"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
