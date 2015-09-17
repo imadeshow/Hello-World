@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/ng-tags-input/ng-tags-input.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/ng-tags-input/ng-tags-input.min.js"></script>
+<script src="scripts/tagsinput.js"></script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <label for="tags">タグ：</label>
+    <tags-input id="tags" ng-model="myTags" placeholder="タグを追加"
+      on-tag-added="onAdded($tag)"></tags-input>
+  <p>タグ: {{myTags}}</p>
+</form>
+</body>
+</html>

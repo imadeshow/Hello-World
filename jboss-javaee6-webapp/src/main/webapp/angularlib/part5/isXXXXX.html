@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/isXXXXX.js"></script>
+</head>
+<body ng-controller="MyController">
+<p>{{'AngularJS' | isString}}</p>
+<p>{{'450' | isNumber}}</p>
+<p>{{450 | isNumber}}</p>
+<p>{{[1, 2, 3] | isObject}}</p>
+<p>{{'JavaScript' | isObject}}</p>
+<p>{{[1, 2, 3] | isArray}}</p>
+<p>{{$apply | isFunction}}</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/angular-tree-control/css/tree-control.css" />
+<link rel="stylesheet" href="../bower_components/angular-tree-control/css/tree-control-attribute.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-tree-control/angular-tree-control.js"></script>
+<script src="scripts/tree_select.js"></script>
+</head>
+<body ng-controller="MyController">
+<treecontrol class="tree-classic"
+  tree-model="data"
+  order-by="price"
+  options="opts"
+  on-selection="onselect(node)">
+  <a ng-href="{{node.url}}">{{node.title}}
+    <span ng-show="node.price">({{node.price | number}}円)</span>
+  </a>
+</treecontrol>
+<div>{{details}}</div>
+</body>
+</html>

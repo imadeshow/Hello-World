@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-ui-indeterminate/dist/indeterminate.min.js"></script>
+<script src="scripts/indeterminate.js"></script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <div>
+    <label for="inter">不確定ボックス：</label>
+    <input id="inter" type="checkbox"
+      ui-indeterminate="unknown" ng-model="result" />
+  </div>
+</form>
+</body>
+</html>

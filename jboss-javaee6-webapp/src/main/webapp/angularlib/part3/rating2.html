@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/rating2.js"></script>
+</head>
+<body ng-controller="MyController">
+<rating ng-model="rate" max="max" readonly="isReadonly"
+  state-on="'glyphicon-thumbs-up'" state-off="'glyphicon-thumbs-down'"
+  on-hover="onhover(value)"></rating>
+<span class="label label-warning"
+  ng-show="percent >= 0 && percent < 40">低</span>
+<span class="label label-default"
+  ng-show="percent >= 40 && percent < 70">並</span>
+<span class="label label-success"
+  ng-show="percent >= 70">高</span>
+</body>
+</html>

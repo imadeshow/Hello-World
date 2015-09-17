@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/ngstorage/ngStorage.min.js"></script>
+<script src="scripts/storage.js"></script>
+</head>
+<body ng-controller="MyController">
+<button ng-click="$storage.count = $storage.count + 1">数える</button>
+<button ng-click="ondelete()">初期化</button>
+<div ng-show="$storage.count">羊が{{$storage.count}}匹…</div>
+</body>
+</html>

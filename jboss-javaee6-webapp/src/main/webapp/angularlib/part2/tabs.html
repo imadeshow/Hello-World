@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/tabs.js"></script>
+</head>
+<body ng-controller="MyController">
+<tabset>
+  <tab ng-repeat="tab in tabs" heading="{{tab.title}}"
+    active="tab.active" disable="tab.disabled"
+    select="logging(tab.title)">
+    <div ng-bind-html="tab.content"></div>
+  </tab>
+  <!--
+  <tab ng-repeat="tab in tabs" heading="{{tab.title}}"
+    active="tab.active" disable="tab.disabled"
+    select="logging(tab.title)">
+  <tab-heading>
+    {{tab.title}}
+  </tab-heading>
+    <div ng-bind-html="tab.content"></div>
+  </tab>
+  -->
+</tabset>
+</body>
+</html>

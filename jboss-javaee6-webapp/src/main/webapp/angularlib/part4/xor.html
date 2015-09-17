@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/xor.js"></script>
+</head>
+<body ng-controller="MyController">
+<table class="table">
+  <tr>
+    <th>ISBNコード</th><th>タイトル</th>
+  </tr>
+  <tr ng-repeat="book in books1 | xor: books2: 'isbn'">
+    <td>{{book.isbn}}</td>
+    <td>{{book.title}}</td>
+  </tr>
+</table>
+</body>
+</html>

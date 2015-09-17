@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/reverse.js"></script>
+</head>
+<body ng-controller="MyController">
+<ul>
+<li ng-repeat="book in books">
+  {{book.title}}
+</li>
+</ul>
+<hr />
+<ul>
+<li ng-repeat="book in books | reverse">
+  {{book.title}}
+</li>
+</ul>
+</body>
+</html>

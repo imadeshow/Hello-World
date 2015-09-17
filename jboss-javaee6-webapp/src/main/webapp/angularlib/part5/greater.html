@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/greater.js"></script>
+</head>
+<body ng-controller="MyController">
+<p>{{ 50 + 50 | isGreaterThan: 100 }}</p>
+<p>{{ 50 + 50 | isGreaterThanOrEqualTo: 100 }}</p>
+<p>{{ 50 + 50 | isLessThan: 100 }}</p>
+<p>{{ 50 + 50 | isLessThanOrEqualTo: 100 }}</p>
+<p>{{ '500' | isEqualTo: 500 }}</p>
+<p>{{ '500' | isNotEqualTo: 500 }}</p>
+<p>{{ '500' | isIdenticalTo: 500 }}</p>
+<p>{{ '500' | isNotIdenticalTo: 500 }}</p>
+</body>
+</html>

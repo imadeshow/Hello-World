@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/map.js"></script>
+</head>
+<body ng-controller="MyController">
+<ul ng-init="taxed_book = books | map: tax">
+  <li ng-repeat="book in taxed_book">
+    {{ book.title }} （税込 {{ book.price }}円）
+  </li>
+</ul>
+</body>
+</html>

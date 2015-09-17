@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/test.js"></script>
+</head>
+<body ng-controller="MyController">
+<p>{{ '123-4567' | test: '^[0-9]{3}[-]{1}[0-9]{4}$' }}</p>
+<p>{{ '123-4567' | test: '^[\\d]{3}[-]{1}[\\d]{4}$' }}</p>
+<p>{{ 'Wings Project' | test: 'w.+t': 'g' }}</p>
+<p>{{ 'Wings Project' | test: 'w.+t': 'gi' }}</p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-fullscreen/src/angular-fullscreen.js"></script>
+<script src="scripts/fullscreen_code.js"></script>
+</head>
+<body ng-controller="MyController">
+<div style="width: 300px">
+  <button ng-click="onfull()">全画面表示</button>
+  <figure id="dog">
+    <figcaption>犬とこども</figcaption>
+    <img id="dog" src="image/dog.jpg" style="width: 100%;"
+      fullscreen="isFullScreen" only-watched-property />
+  </figure>
+</div>
+</body>
+</html>

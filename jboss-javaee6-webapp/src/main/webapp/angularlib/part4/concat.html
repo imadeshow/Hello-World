@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/concat.js"></script>
+</head>
+<body ng-controller="MyController">
+<pre>
+{{books1 | concat: books2 | json}}
+<hr />
+{{book_obj1 | concat: book_obj2 | json}}
+<hr />
+{{books1 | concat: book_obj1 | json}}
+</pre>
+</body>
+</html>

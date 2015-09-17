@@ -1,0 +1,8 @@
+.list {
+  list-style: none outside none;
+  margin: 10px 0 20px;
+}
+
+li.sort-placeholder {
+  border: 1px dashed Gray;
+}

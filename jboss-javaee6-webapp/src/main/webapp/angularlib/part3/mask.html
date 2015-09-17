@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-ui-mask/dist/mask.min.js"></script>
+<script src="scripts/mask.js"></script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <div>
+    <label for="tel">電話番号：</label>
+    <input id="tel" type="tel" size="10"
+      ng-model="phone" ui-mask="(999)999-9999" />
+  </div>
+  {{phone}}
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/pick.js"></script>
+</head>
+<body ng-controller="MyController">
+<table class="table">
+  <tr>
+    <th>ISBNコード</th><th>タイトル</th><th>価格</th><th>出版社</th><th>刊行日</th>
+  </tr>
+  <tr ng-repeat="book in books | pick:gihyo">
+<!--<tr ng-repeat="book in books | pick:'publish === \'技術評論社\''">-->
+    <td>{{book.isbn}}</td>
+    <td>{{book.title}}</td>
+    <td>{{book.price}}円</td>
+    <td>{{book.publish}}</td>
+    <td>{{book.published | date}}</td>
+  </tr>
+</table>
+</body>
+</html>

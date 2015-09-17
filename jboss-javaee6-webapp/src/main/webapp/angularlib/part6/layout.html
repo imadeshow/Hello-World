@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/angular-ui-layout/ui-layout.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-ui-layout/ui-layout.js"></script>
+<script src="scripts/layout.js"></script>
+</head>
+<body ng-controller="MyController">
+<div ui-layout="{ flow : 'column', dividerSize: '5px' }">
+  <div ui-layout-container size="20%" style="background-color:Red;"></div>
+  <div ui-layout-container>
+    <div ui-layout="{ flow : 'row', dividerSize: '5px' }">
+      <div ui-layout-container size="50%" style="background-color:Blue;"></div>
+      <div ui-layout-container size="50%" style="background-color:Yellow;"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

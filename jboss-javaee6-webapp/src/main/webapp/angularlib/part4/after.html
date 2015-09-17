@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/after.js"></script>
+</head>
+<body ng-controller="MyController">
+<ul>
+<li ng-repeat="book in books | after:3">
+<!--<li ng-repeat="book in books | before:3">-->
+  {{book.title}}（{{book.price}}円）
+</li>
+</ul>
+</body>
+</html>

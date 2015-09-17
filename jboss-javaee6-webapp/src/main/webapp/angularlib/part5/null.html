@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/null.js"></script>
+</head>
+<body ng-controller="MyController">
+<p>{{data1 | isNull}}</p>
+<p>{{data2 | isDefined}}</p>
+<p>{{data2 | isUndefined}}</p>
+<p>{{data3 | isUndefined}}</p>
+</body>
+</html>

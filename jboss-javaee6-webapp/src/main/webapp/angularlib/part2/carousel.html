@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/carousel.js"></script>
+</head>
+<body ng-controller="MyController">
+<carousel interval="interval" style="width: 500px;">
+  <slide ng-repeat="slide in slides">
+    <img ng-src="{{slide.path}}" style="margin:auto;" />
+    <div class="carousel-caption">
+      <h4>{{slide.title}}</h4>
+      <p>{{slide.desc}}</p>
+    </div>
+  </slide>
+</carousel>
+</body>
+</html>

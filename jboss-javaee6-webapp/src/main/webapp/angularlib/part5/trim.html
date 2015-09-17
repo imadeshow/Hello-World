@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/trim.js"></script>
+</head>
+<body ng-controller="MyController">
+<p>{{ '  WINGSプロジェクト  ' | trim }}</p>
+<p>{{ '＃WINGSプロジェクト＃' | trim: '＃' }}</p>
+<p>{{ '＃WINGSプロジェクト＃' | ltrim: '＃' }}</p>
+<p>{{ '＃WINGSプロジェクト＃' | rtrim: '＃' }}</p>
+</body>
+</html>

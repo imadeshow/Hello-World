@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/collapse.js"></script>
+</head>
+<body ng-controller="MyController">
+<div class="panel panel-primary">
+  <div class="panel-heading" ng-click="open = !open">
+    <div class="panel-title">バイオリン</div>
+  </div>
+  <div class="panel-body" collapse="open">
+    <p>弦楽器の一種で、室内楽や管弦楽などに使用される高音用の楽器です。</p>
+    <p>全長は約60センチで、4本の弦が張られており、高い方からE線、A線、D線、G線と呼びます。</p>
+    <p>バッハの有名な曲「G線上のアリア」は、このG線を意味しています。</p>
+  </div>
+</div>
+</body>
+</html>

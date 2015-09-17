@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+<script src="../bower_components/ng-clip/src/ngClip.js"></script>
+<script src="scripts/clip.js"></script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <div>
+    <label for="message">メッセージ：</label>
+    <input id="message" type="text" size="50" ng-model="copy" />
+    <button clip-copy="copy">コピー</button>
+    <!--<button clip-copy="copy" clip-click-fallback="onfallback(copy)">コピー</button>-->
+  </div>
+</form>
+</body>
+</html>

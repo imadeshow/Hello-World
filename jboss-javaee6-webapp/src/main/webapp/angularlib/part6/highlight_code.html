@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/highlightjs/styles/github.css" />
+<script src="../bower_components/highlightjs/highlight.pack.js"></script>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-highlightjs/angular-highlightjs.min.js"></script>
+<script src="scripts/highlight_code.js"></script>
+</head>
+<body ng-controller="MyController">
+<div hljs>
+angular.module('myApp', ['hljs'])
+  .config(['hljsServiceProvider', function (hljsServiceProvider) {
+    hljsServiceProvider.setOptions({
+      tabReplace: '  '
+    });
+  }])
+  .controller('MyController', ['$scope', function($scope) {
+  }]);
+</div>
+</body>
+</html>

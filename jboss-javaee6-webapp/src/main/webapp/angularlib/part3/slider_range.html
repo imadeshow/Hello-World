@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/angular-slider/slider.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-slider/slider.js"></script>
+<script src="scripts/slider_range.js"></script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <slider floor="0" ceiling="500" step="10"
+    ng-model-low="min" ng-model-high="max"></slider>
+  現在値：{{min}}～{{max}}
+</form>
+</body>
+</html>

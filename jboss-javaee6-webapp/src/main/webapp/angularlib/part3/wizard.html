@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/angular-wizard/dist/angular-wizard.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/lodash/dist/lodash.js"></script>
+<script src="../bower_components/angular-wizard/dist/angular-wizard.js"></script>
+<script src="scripts/wizard.js"></script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <wizard on-finish="onfinish()" edit-mode="false">
+    <wz-step title="ステップ1">
+      <h1>お客様情報</h1>
+      <p><label for="name">氏名：</label><br />
+      <input type="text" id="name" ng-model="user.name" /></p>
+      <p><label for="email">メールアドレス：</label><br />
+      <input type="email" id="email" ng-model="user.mail" /></p>
+      <input type="submit" wz-next value="次へ" />
+    </wz-step>
+    <wz-step title="ステップ2">
+      <h1>この商品を何でお知りになりましたか。</h1>
+      <p>
+      <label for="know">情報源：</label><br />
+      <input type="radio" ng-model="user.know" value="web" />Webサイト<br />
+      <input type="radio" ng-model="user.know" value="cm" />テレビコマーシャル<br />
+      <input type="radio" ng-model="user.know" value="dm" />ダイレクトメール<br />
+      <input type="radio" ng-model="user.know" value="friend" />知人の紹介<br />
+      <input type="radio" ng-model="user.know" value="other" />その他<br />
+      </p>
+      <input type="submit" wz-previous value="前へ" />
+      <input type="submit" wz-next value="次へ" />
+    </wz-step>
+    <wz-step title="ステップ3">
+      <h1>お客様の声をお聞かせください</h1>
+      <p>
+      <label for="memo">ご意見／ご感想：</label><br />
+      <textarea id="memo" ng-model="user.memo" cols="30" rows="10"></textarea>
+      </p>
+      <input type="submit" wz-cancel value="キャンセル" />
+      <input type="submit" wz-finish value="完了" />
+    </wz-step>
+  </wizard>
+</form>
+</body>
+</html>

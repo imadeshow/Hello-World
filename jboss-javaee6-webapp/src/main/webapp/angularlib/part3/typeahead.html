@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/typeahead.js"></script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <label for="keyword">キーワード：</label>
+  <input type="text" id="keyword" ng-model="keyword"
+    typeahead="keyword for keyword in keywords | filter:$viewValue | limitTo: 10" />
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="../bower_components/angular-i18n/angular-locale_ja-jp.js"></script>
+<script src="scripts/timepicker.js"></script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <timepicker ng-model="current"
+    hour-step="hourStep" minute-step="minuteStep" show-meridian="amPm">
+  </timepicker>
+  {{current.toLocaleTimeString()}}
+</form>
+</html>

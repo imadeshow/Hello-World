@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../bower_components/angular-timeline/dist/angular-timeline.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-timeline/dist/angular-timeline.js"></script>
+<script src="scripts/timeline.js"></script>
+</head>
+<body ng-controller="MyController">
+<timeline>
+  <timeline-node side="left">
+    <timeline-badge class="info"><i class="glyphicon glyphicon-user"></i>
+    </timeline-badge>
+    <timeline-panel>
+      <timeline-heading>
+        <timeline-title>1980年誕生</timeline-title>
+        <p>
+          <small class="text-muted">
+            <i class="glyphicon glyphicon-heart-empty"></i>東京都で生まれました。
+          </small>
+        </p>
+      </timeline-heading>
+      <timeline-content>
+        <p>ある晴れた日にこの世に誕生しました。</p>
+      </timeline-content>
+    </timeline-panel>
+  </timeline-node>
+  <timeline-node side="right">
+    <timeline-badge class="success"><i class="glyphicon glyphicon-pencil"></i>      </timeline-badge>
+    <timeline-panel>
+      <timeline-heading>
+        <timeline-title>1992年小学校卒業</timeline-title>
+        <p>
+          <small class="text-muted">12歳で小学校卒業</small>
+        </p>
+      </timeline-heading>
+      <timeline-content>
+        <p>家から歩いて3分の小学校を卒業しました。</p>
+      </timeline-content>
+    </timeline-panel>
+  </timeline-node>
+  <timeline-node side="right">
+    <timeline-badge class="warning"><i class="glyphicon glyphicon-pencil"></i>      </timeline-badge>
+    <timeline-panel>
+      <timeline-heading>
+        <timeline-title>1995年中学校卒業</timeline-title>
+        <p>
+          <small class="text-muted">15歳で中学校卒業</small>
+        </p>
+      </timeline-heading>
+      <timeline-content>
+        <p>中学は、自転車通学でした。</p>
+      </timeline-content>
+    </timeline-panel>
+  </timeline-node>
+  <timeline-node side="left">
+    <timeline-badge class="primary"><i class="glyphicon glyphicon-pencil"></i>
+    </timeline-badge>
+    <timeline-panel>
+      <timeline-heading>
+        <timeline-title>1998年高校卒業</timeline-title>
+        <p>
+          <small class="text-muted">18歳で高校卒業</small>
+        </p>
+      </timeline-heading>
+      <timeline-content>
+        <p>高校は、電車＆バス通学でした。</p>
+      </timeline-content>
+    </timeline-panel>
+  </timeline-node>
+</timeline>
+</body>
+</html>

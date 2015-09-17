@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/starts_with.js"></script>
+</head>
+<body ng-controller="MyController">
+<p>{{ 'http://www.wings.msn.to/' | startsWith: 'http://' }}</p>
+<p>{{ 'c:/user/sample.html' | startsWith: 'http://' }}</p>
+<p>{{ 'image.png' | endsWith: '.png' }}</p>
+<p>{{ 'image.PNG' | endsWith: '.png': true }}</p>
+</body>
+</html>

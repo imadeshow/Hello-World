@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/filter_by.js"></script>
+</head>
+<body ng-controller="MyController">
+<ul>
+<li ng-repeat="member in members | filterBy: ['f_name + l_name']: '花'">
+  {{ member.f_name }} {{ member.l_name }}
+</li>
+</ul>
+</body>
+</html>

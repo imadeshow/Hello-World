@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="css/file_up.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/ng-file-upload/ng-file-upload-shim.min.js"></script>
+<script src="../bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+<script src="scripts/file_up2.js"></script>
+</head>
+<body ng-controller="MyController">
+<p>画像：</p>
+<div>ファイル：
+  <button ngf-select ng-model="files" ngf-multiple="true"
+    ngf-accept="'.jpg,.png,.gif'">ファイルを選択</button>
+</div>
+</form>
+<hr />
+<p>サムネイル：</p>
+<div ng-repeat="file in files" style="width: 150px;">
+  <img ngf-src="file" ngf-accept="'image/*'"/>
+</div>
+<div ngf-no-file-drop>お使いのブラウザーでは使用できません。</div>
+</body>
+</html>

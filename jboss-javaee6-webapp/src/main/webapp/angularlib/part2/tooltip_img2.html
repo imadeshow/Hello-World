@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="scripts/tooltip_img2.js"></script>
+</head>
+<body ng-controller="MyController">
+<p>
+  <a href="http://www.web-deli.com/" tooltip-placement="right"
+    tooltip="Spicy Tools, Delicious Sites." tooltip-trigger="mouseenter">
+    WebDeli
+  </a>
+は、ASP.NETを使ったアプリ作成に役立つサイトです。</p>
+
+<p>知っておきたい
+  <a href="http://www.web-deli.com/" tooltip-placement="right"
+    tooltip="TIPS形式のチュートリアル" tooltip-trigger="mouseenter">
+    技術情報（コツ・ワザ）
+  </a>
+や 役立つ
+  <a href="http://www.web-deli.com/" tooltip-placement="bottom"
+    tooltip="誰でも無料でダウンロードできます" tooltip-trigger="mouseenter">
+    ツール
+  </a>
+が満載です。</p>
+<p>かわいい
+  <a href="#" tooltip-placement="bottom" tooltip-html="chara"
+    tooltip-trigger="click">キャラクター
+  </a>
+も人気です。</p>
+</body>
+</html>

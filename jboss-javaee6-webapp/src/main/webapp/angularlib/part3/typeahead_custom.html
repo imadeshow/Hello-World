@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/typeahead_custom.js"></script>
+<script type="text/ng-template" id="myTemplate.html">
+  <a>
+    <img ng-src="http://www.wings.msn.to/books/{{match.model.isbn}}/{{match.model.isbn}}_logo.jpg" style="width: 35px" />
+    <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+  </a>
+</script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <label for="keyword">キーワード：</label>
+  <input type="text" id="keyword" ng-model="keyword" typeahead="book.isbn as book.title for book in books | filter:$viewValue | limitTo: 10"
+  typeahead-template-url="myTemplate.html" />
+</form>
+</body>
+</html>

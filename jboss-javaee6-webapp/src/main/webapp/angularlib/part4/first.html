@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/first.js"></script>
+</head>
+<body ng-controller="MyController">
+<div>
+<p>最初の要素を取得</p>
+<pre>{{ books | first | json}}</pre>
+</div>
+<div>
+<p>最後の要素を取得</p>
+<pre>{{ books | last | json}}</pre>
+</div>
+<div>
+<p>先頭から3つの要素を取得</p>
+<pre>{{ books | first:3 | json}}</pre>
+</div>
+<div>
+<p>著者が「歌川奏」である最後の要素を取得</p>
+<pre>{{books | last : 'author == \'歌川奏\'' | json}}</pre>
+</div>
+</body>
+</html>

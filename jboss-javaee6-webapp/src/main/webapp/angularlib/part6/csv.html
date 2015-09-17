@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="../bower_components/ng-csv/build/ng-csv.min.js"></script>
+<script src="scripts/csv.js"></script>
+</head>
+<body ng-controller="MyController">
+<button type="button" ng-csv="getInfo()"
+  filename="books.csv" csv-header="headers">
+  ダウンロード
+</button>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/angular-slider/slider.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-slider/slider.js"></script>
+<script src="scripts/slider.js"></script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <slider floor="0" ceiling="100" step="5" precision="0" ng-model="value">
+  </slider>
+  現在値：{{value}}
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.min.js"></script>
+<script src="scripts/max.js"></script>
+</head>
+<body ng-controller="MyController">
+<p>最高値：{{books | max: 'price || taxed_price'}}</p>
+<p>最低値：{{books | min: 'price || taxed_price'}}</p>
+</body>
+</html>

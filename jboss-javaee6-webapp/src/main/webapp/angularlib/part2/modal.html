@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/modal.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/modal.js"></script>
+</head>
+<body ng-controller="MyController">
+<script type="text/ng-template" id="modal.html">
+  <div class="modal-header">
+    <h3 class="modal-title">申し込みフォーム</h3>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div>
+        <label for="name">氏名：</label><br />
+        <input type="text" id="name" ng-model="user.name" />
+      </div>
+      <div>
+        <label for="email">メールアドレス：</label><br />
+        <input type="text" id="email" ng-model="user.email" />
+      </div>
+      <div>
+        <label for="password">電話番号：</label><br />
+        <input type="password" id="tel" ng-model="user.tel" />
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">送信</button>
+    <button class="btn btn-warning" ng-click="cancel()">キャンセル</button>
+  </div>
+</script>
+<button class="btn btn-info" ng-click="open()">申し込み</button>
+</body>
+</html>

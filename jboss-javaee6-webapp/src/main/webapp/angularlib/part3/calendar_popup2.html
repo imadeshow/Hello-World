@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<title>AngularJS</title>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-i18n/angular-locale_ja-jp.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/calendar_popup2.js"></script>
+</head>
+<body ng-controller="MyController">
+<form>
+  <label for="date">日付：</label>
+  <input id="date" type="text" ng-model="today" 
+    datepicker-popup="yyyy-MM-dd" is-open="opened"
+    current-text="今日" clear-text="クリア" close-text="閉じる" />
+  <button type="button" class="btn btn-default" ng-click="onopen($event)">
+    <span class="glyphicon glyphicon-calendar"></span>
+  </button>
+</form>
+</body>
+</html>
